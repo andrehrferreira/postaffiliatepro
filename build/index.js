@@ -279,7 +279,7 @@ var PostAffiliatePro = /*#__PURE__*/function () {
   }, {
     key: "campaigns",
     value: function () {
-      var _campaigns = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
+      var _campaigns = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6(offset, limit) {
         var campaigns;
         return regeneratorRuntime.wrap(function _callee6$(_context6) {
           while (1) {
@@ -292,6 +292,8 @@ var PostAffiliatePro = /*#__PURE__*/function () {
                   "requests": [{
                     "C": "Pap_Affiliates_Promo_CampaignsGrid",
                     "M": "getRows",
+                    "offset": offset,
+                    "limit": limit,
                     "columns": [["id"], ["name"], ["description"], ["logourl"], ["banners"], ["longdescriptionexists"], ["commissionsdetails"], ["rstatus"], ["commissionsexist"]]
                   }]
                 });
@@ -308,7 +310,7 @@ var PostAffiliatePro = /*#__PURE__*/function () {
         }, _callee6, this);
       }));
 
-      function campaigns() {
+      function campaigns(_x4, _x5) {
         return _campaigns.apply(this, arguments);
       }
 
@@ -349,7 +351,7 @@ var PostAffiliatePro = /*#__PURE__*/function () {
         }, _callee7, this);
       }));
 
-      function promo(_x4, _x5, _x6) {
+      function promo(_x6, _x7, _x8) {
         return _promo.apply(this, arguments);
       }
 
@@ -389,7 +391,7 @@ var PostAffiliatePro = /*#__PURE__*/function () {
         }, _callee8, this);
       }));
 
-      function report(_x7, _x8, _x9) {
+      function report(_x9, _x10, _x11) {
         return _report.apply(this, arguments);
       }
 
@@ -431,7 +433,7 @@ var PostAffiliatePro = /*#__PURE__*/function () {
         }, _callee9, this);
       }));
 
-      function deeplink(_x10, _x11) {
+      function deeplink(_x12, _x13) {
         return _deeplink.apply(this, arguments);
       }
 

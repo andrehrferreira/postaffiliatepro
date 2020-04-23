@@ -1,6 +1,6 @@
 {
     "name": "@vigiadepreco/postaffiliatepro",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "API integration with Post Affiliate Pro",
     "main": "./build/index.js",
     "scripts": {
