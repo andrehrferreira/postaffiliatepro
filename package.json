@@ -13,6 +13,10 @@
         "type": "git",
         "url": "git+https://github.com/vigiadepreco/postaffiliatepro.git"
     },
+    "keywords": [
+        "vigiadepreco",
+        "post affiliate pro"
+    ],
     "author": "Andre Ferreira <andre@vigiadepreco.com.br>",
     "license": "MIT",
     "bugs": {
