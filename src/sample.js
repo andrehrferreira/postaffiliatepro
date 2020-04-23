@@ -1,21 +1,6 @@
-# @vigiadepreco/postaffiliatepro
+import "@babel/polyfill/noConflict";
 
-API integration with Post Affiliate Pro
-
-## Install
-
-```bash
-$ yarn add @vigiadepreco/postaffiliatepro --save
-```
-
-## API Documentation
-
-* API Doc - https://support.qualityunit.com/725708-API-Requirements
-
-## Usage
-
-```js
-import PostAffiliatePro from "@vigiadepreco/postaffiliatepro";
+import PostAffiliatePro from "./index";
 
 const postaffiliatepro = new PostAffiliatePro("http://<Affiliate>.postaffiliatepro.com/scripts/server.php", "http://<Affiliate>.postaffiliatepro.com/affiliates/login.php", "user", "pass");
 
@@ -36,4 +21,3 @@ const postaffiliatepro = new PostAffiliatePro("http://<Affiliate>.postaffiliatep
     let deeplink = await postaffiliatepro.deeplink("https://www.franciscajoias.com.br/", "245cc698");
     console.log(deeplink);
 })();
-```
