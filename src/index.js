@@ -122,13 +122,15 @@ export default class PostAffiliatePro{
         return result;
     }
 
-    async campaigns(){
+    async campaigns(offset, limit){
         let campaigns = await this.command({
             "C": "Gpf_Rpc_Server",
             "M": "run",
             "requests": [{
                 "C": "Pap_Affiliates_Promo_CampaignsGrid",
                 "M": "getRows",
+                "offset": offset, 
+                "limit": limit,
                 "columns": [["id"],["name"],["description"],["logourl"],["banners"],["longdescriptionexists"],["commissionsdetails"],["rstatus"],["commissionsexist"]]
             }]
         });

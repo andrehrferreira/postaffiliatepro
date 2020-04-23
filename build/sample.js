@@ -19,7 +19,7 @@ _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return postaffiliatepro.campaigns();
+          return postaffiliatepro.campaigns(0, 100);
 
         case 2:
           campaigns = _context.sent;

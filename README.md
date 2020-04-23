@@ -21,7 +21,7 @@ const postaffiliatepro = new PostAffiliatePro("http://<Affiliate>.postaffiliatep
 
 (async () => {
     //Campaigns
-    let campaigns = await postaffiliatepro.campaigns();
+    let campaigns = await postaffiliatepro.campaigns(0, 100);
     console.log(campaigns);
 
     //Coupons
